@@ -6,8 +6,8 @@
 
     <!-- SEO Meta Tags -->
     <title>American Diesel Mechanix, LLC | Mobile Diesel Repair</title>
-    <meta name="description" content="Expert mobile diesel mechanic services in [Your City/State]. American Diesel Mechanix offers on-site diagnostics, repair, maintenance, and emergency roadside assistance for trucks, RVs, and heavy equipment.">
-    <meta name="keywords" content="mobile diesel repair, diesel mechanic near me, American Diesel Mechanix, truck repair, RV repair, heavy equipment service, emergency diesel mechanic, on-site diesel service">
+    <meta name="description" content="Expert mobile diesel mechanic services in the St. Augustine & Jacksonville, FL area. American Diesel Mechanix offers on-site diagnostics, repair, maintenance, and emergency roadside assistance for trucks, RVs, and heavy equipment.">
+    <meta name="keywords" content="mobile diesel repair, diesel mechanic near me, St. Augustine diesel repair, Jacksonville truck repair, American Diesel Mechanix, RV repair, heavy equipment service, emergency diesel mechanic">
     <meta name="author" content="American Diesel Mechanix, LLC">
 
     <!-- Google Fonts -->
@@ -31,16 +31,14 @@
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "",
-        "addressLocality": "[Your City]",
-        "addressRegion": "[Your State]",
-        "postalCode": "[Your Zip]",
+        "addressLocality": "St. Augustine",
+        "addressRegion": "FL",
         "addressCountry": "US"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 29.2108,
-        "longitude": -81.0228 
+        "latitude": 30.0151,
+        "longitude": -81.4428 
       },
       "openingHoursSpecification": [
         {
@@ -65,8 +63,8 @@
         "@type": "GeoCircle",
         "geoMidpoint": {
           "@type": "GeoCoordinates",
-          "latitude": "29.2108",
-          "longitude": "-81.0228"
+          "latitude": "30.0151",
+          "longitude": "-81.4428"
         },
         "geoRadius": "100000"
       }
@@ -167,7 +165,7 @@
 
         .logo {
             font-family: var(--font-header);
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: 900;
             color: var(--primary-blue);
             text-decoration: none;
@@ -200,6 +198,7 @@
             font-weight: 700;
             color: var(--accent-red);
             text-decoration: none;
+            white-space: nowrap;
         }
 
         .header-contact i {
@@ -248,7 +247,7 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
 
@@ -278,6 +277,9 @@
         }
         
         /* About Us Section */
+        #about {
+           background-color: var(--white);
+        }
         .about-content {
             display: flex;
             align-items: center;
@@ -292,40 +294,11 @@
             border-radius: 8px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
-
-        /* Blog Section */
-        #blog {
-            background-color: var(--light-gray);
-        }
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        .blog-post {
-            background: var(--white);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
-        .blog-post img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .blog-post-content {
-            padding: 20px;
-        }
-        .blog-post-content h3 {
-            margin-bottom: 10px;
-        }
-        .blog-post-content a {
-            color: var(--accent-red);
-            font-weight: 600;
-            text-decoration: none;
-        }
-
+        
         /* Contact Section */
+        #contact {
+           background-color: var(--light-gray);
+        }
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -475,7 +448,7 @@
             }
             
             .header-contact {
-                display: none; /* Hide header contact on mobile, will be in menu or footer */
+                display: none; /* Hide header contact on mobile to save space */
             }
 
             .hero-content h1 {
@@ -496,13 +469,12 @@
 
     <header class="main-header" id="main-header">
         <div class="container">
-            <a href="#home" class="logo">American Diesel Mechanix</a>
+            <a href="#home" class="logo">ADM</a>
             <nav class="main-nav" id="main-nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -546,19 +518,9 @@
                         <p>Customized maintenance plans to keep your fleet running efficiently and minimize downtime.</p>
                     </div>
                     <div class="service-card">
-                        <i class="fas fa-car-battery"></i>
-                        <h3>Electrical System Repair</h3>
-                        <p>From batteries to complex wiring, we handle all diesel vehicle electrical system problems.</p>
-                    </div>
-                    <div class="service-card">
                         <i class="fas fa-oil-can"></i>
                         <h3>Preventative Maintenance</h3>
                         <p>Scheduled oil changes, fluid checks, and inspections to prevent costly breakdowns.</p>
-                    </div>
-                    <div class="service-card">
-                        <i class="fas fa-compact-disc"></i>
-                        <h3>Brake & Transmission Services</h3>
-                        <p>Comprehensive brake and transmission repairs to ensure your vehicle's safety and performance.</p>
                     </div>
                 </div>
             </div>
@@ -578,39 +540,6 @@
                         <img src="https://images.unsplash.com/photo-1621992120423-5e042b31a8a2?q=80&w=1974&auto=format&fit=crop" alt="Mechanic working on a diesel engine" loading="lazy">
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Blog Section -->
-        <section id="blog">
-            <div class="container">
-                <h2>From Our Blog</h2>
-                 <div class="blog-grid">
-                    <div class="blog-post">
-                        <img src="https://images.unsplash.com/photo-1553832109-72cf5f543163?q=80&w=2070&auto=format&fit=crop" alt="Diesel truck on a highway" loading="lazy">
-                        <div class="blog-post-content">
-                            <h3>5 Signs Your Diesel Engine Needs a Check-Up</h3>
-                            <p>Don't wait for a breakdown. Learn the common warning signs that your diesel engine is due for professional service...</p>
-                            <a href="#">Read More &raquo;</a>
-                        </div>
-                    </div>
-                    <div class="blog-post">
-                        <img src="https://images.unsplash.com/photo-1517524206127-48bbd363f59c?q=80&w=2070&auto=format&fit=crop" alt="Close-up of a diesel engine" loading="lazy">
-                        <div class="blog-post-content">
-                            <h3>The Importance of Regular Fleet Maintenance</h3>
-                            <p>Discover how a proactive fleet maintenance schedule can save you thousands in repair costs and reduce vehicle downtime...</p>
-                            <a href="#">Read More &raquo;</a>
-                        </div>
-                    </div>
-                     <div class="blog-post">
-                        <img src="https://images.unsplash.com/photo-1615906652294-387010a3a411?q=80&w=2070&auto=format&fit=crop" alt="Mechanic tools laid out" loading="lazy">
-                        <div class="blog-post-content">
-                            <h3>Winterizing Your Heavy-Duty Diesel Truck</h3>
-                            <p>Cold weather can be tough on diesel engines. Follow our expert checklist to ensure your truck is ready for the winter months...</p>
-                            <a href="#">Read More &raquo;</a>
-                        </div>
-                    </div>
-                 </div>
             </div>
         </section>
 
@@ -641,7 +570,7 @@
                         <h3>Get In Touch Directly</h3>
                         <p><i class="fas fa-phone"></i> <a href="tel:3862270152">(386)-227-0152</a></p>
                         <p><i class="fas fa-envelope"></i> <a href="mailto:jacky@americandieselmechanix.com">jacky@americandieselmechanix.com</a></p>
-                        <p><i class="fas fa-map-marker-alt"></i> Serving [Your City/State] and Surrounding Areas</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Serving St. Augustine, Jacksonville, and Surrounding Areas</p>
                         
                         <h3>Hours of Operation</h3>
                         <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM</p>
@@ -649,7 +578,7 @@
                         
                         <div class="map-container">
                             <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448653.2182987154!2d-81.47244933906248!3d29.18378939999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e6d9b4b0e84b89%3A0x600c3f54b6d4b5a!2sDaytona%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1672957125321!5m2!1sen!2sus" 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221239.7543245055!2d-81.6917482485521!3d30.13418196621908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5b58550759837%3A0x66c89b233a305963!2sSt.%20Johns%20County%2C%20FL!5e0!3m2!1sen!2sus!4v1672957589123!5m2!1sen!2sus"
                                 allowfullscreen="" 
                                 loading="lazy" 
                                 referrerpolicy="no-referrer-when-downgrade">
@@ -682,7 +611,7 @@
                     <ul>
                         <li><a href="tel:3862270152">(386)-227-0152</a></li>
                         <li><a href="mailto:jacky@americandieselmechanix.com">jacky@americandieselmechanix.com</a></li>
-                        <li>Serving [Your City/State Area]</li>
+                        <li>Serving St. Augustine & Jacksonville</li>
                     </ul>
                 </div>
                 <div class="footer-col">
