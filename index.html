@@ -204,9 +204,21 @@
         .header-contact i {
             margin-right: 8px;
         }
+        
+        /* Mobile Controls Wrapper */
+        .mobile-controls {
+            display: none;
+            align-items: center;
+        }
+
+        .mobile-call a {
+            color: var(--primary-blue);
+            font-size: 1.6rem;
+            text-decoration: none;
+            margin-right: 20px;
+        }
 
         .hamburger {
-            display: none;
             cursor: pointer;
             font-size: 2rem;
             color: var(--primary-blue);
@@ -410,9 +422,12 @@
         }
 
         @media (max-width: 768px) {
-            .hamburger {
-                display: block;
-                z-index: 1001;
+            .main-nav, .header-contact {
+                display: none;
+            }
+
+            .mobile-controls {
+                display: flex;
             }
             
             .main-nav {
@@ -446,10 +461,6 @@
                 color: var(--white);
                 font-size: 1.5rem;
             }
-            
-            .header-contact {
-                display: none; /* Hide header contact on mobile to save space */
-            }
 
             .hero-content h1 {
                 font-size: 2.5rem;
@@ -470,6 +481,8 @@
     <header class="main-header" id="main-header">
         <div class="container">
             <a href="#home" class="logo">ADM</a>
+            
+            <!-- Desktop Navigation and Contact -->
             <nav class="main-nav" id="main-nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -481,8 +494,15 @@
             <div class="header-contact">
                 <a href="tel:3862270152"><i class="fas fa-phone"></i> (386)-227-0152</a>
             </div>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
+
+            <!-- Mobile Controls -->
+            <div class="mobile-controls">
+                <div class="mobile-call">
+                    <a href="tel:3862270152" aria-label="Call Now"><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </header>
